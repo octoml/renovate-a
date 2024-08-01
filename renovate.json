@@ -1,0 +1,37 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assigneesFromCodeOwners": true,
+  "extends": ["config:recommended"],
+  "hostRules": [
+    {
+      "abortOnError": false,
+      "abortIgnoreStatusCodes": [403]
+    }
+  ],
+  "npmrc": "@octoml:registry=https://npm.pkg.github.com/",
+  "timezone": "America/Los_Angeles",
+  "schedule": [
+    "every weekend"
+  ],
+  "git-submodules": {
+    "enabled": true
+  },
+  "cloneSubmodules": true,
+  "packageRules": [
+    {
+      "groupName": "groupname",
+      "matchFileNames" : [
+        "Dockerfile",
+        "poetry.lock",
+        "pyproject.toml",
+        "deps/brian-submodule/**/**"
+      ],
+      "lockFileMaintenance": {
+        "enabled": true
+      },
+      "labels": ["groupname"],
+      "additionalBranchPrefix": "groupname-",
+      "additionalReviewers": ["naut-brian"]
+    }
+  ]
+}
