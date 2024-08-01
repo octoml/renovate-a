@@ -2,16 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "assigneesFromCodeOwners": true,
   "extends": ["config:recommended"],
-  "hostRules": [
-    {
-      "abortOnError": false,
-      "abortIgnoreStatusCodes": [403]
-    }
-  ],
-  "timezone": "America/Los_Angeles",
-  "schedule": [
-    "every weekend"
-  ],
   "git-submodules": {
     "enabled": true
   },
