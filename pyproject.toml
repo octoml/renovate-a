@@ -7,10 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-# renovate-b = { path = "./deps/renovate-b", optional = true, develop = true }
+renovate-b = { path = "deps/", optional = true, develop = true }
 fastapi = { version = "^0.110.0", optional = true }
 pytest = {version = "7.4.3", optional = true}
 
-[package.source]
-type = "directory"
-url = "deps/renovate-b"
+#[package.source]
+#type = "directory"
+#url = "deps/renovate-b"

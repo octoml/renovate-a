@@ -8,7 +8,6 @@
       "abortIgnoreStatusCodes": [403]
     }
   ],
-  "npmrc": "@octoml:registry=https://npm.pkg.github.com/",
   "timezone": "America/Los_Angeles",
   "schedule": [
     "every weekend"
@@ -21,10 +20,9 @@
     {
       "groupName": "groupname",
       "matchFileNames" : [
-        "Dockerfile",
         "poetry.lock",
         "pyproject.toml",
-        "deps/brian-submodule/**/**"
+        "deps/**/**"
       ],
       "lockFileMaintenance": {
         "enabled": true
