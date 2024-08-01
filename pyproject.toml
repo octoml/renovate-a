@@ -13,4 +13,4 @@ pytest = {version = "7.4.3", optional = true}
 
 [package.source]
 type = "directory"
-url = "deps/renovate-b"
+url = "deps/"
