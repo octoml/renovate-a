@@ -5,21 +5,5 @@
   "git-submodules": {
     "enabled": true
   },
-  "cloneSubmodules": true,
-  "packageRules": [
-    {
-      "groupName": "groupname",
-      "matchFileNames" : [
-        "poetry.lock",
-        "pyproject.toml",
-        "deps/**/**"
-      ],
-      "lockFileMaintenance": {
-        "enabled": true
-      },
-      "labels": ["groupname"],
-      "additionalBranchPrefix": "groupname-",
-      "additionalReviewers": ["naut-brian"]
-    }
-  ]
+  "cloneSubmodules": true
 }
